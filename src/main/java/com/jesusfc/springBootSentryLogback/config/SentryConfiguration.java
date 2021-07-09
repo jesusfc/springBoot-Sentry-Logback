@@ -30,6 +30,7 @@ public class SentryConfiguration {
     @Value("${sentry.release}")
     String release;
 
+/*
     public SentryConfiguration(){
         sentryClient = Sentry.init(dsn);
         sentryClient.setEnvironment(environment);
@@ -47,3 +48,6 @@ public class SentryConfiguration {
     public ServletContextInitializer sentryServletContextInitializer() {
         return new SentryServletContextInitializer();
     }
+
+ */
+}
