@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: development
+
+app:
+  name: Sentry and logback
+
+
+

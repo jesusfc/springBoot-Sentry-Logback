@@ -15,11 +15,15 @@ public class IndexController {
 
 
     @Value("${sentry.dsn}")
-    private static String dsn;
+    private String dsn;
+
+    @Value("${app.name}")
+    private String appName;
 
     @RequestMapping({"", "/", "/index"})
     public String getIndexPage() {
         try {
+            System.out.println(appName);
             System.out.println(dsn);
             String a = null;
             System.out.println(a.length());
