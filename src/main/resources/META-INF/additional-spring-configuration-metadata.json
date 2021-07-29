@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "sentry.dsn",
+      "type": "java.lang.String",
+      "description": "Description for sentry.dsn."
+  }
+] }
