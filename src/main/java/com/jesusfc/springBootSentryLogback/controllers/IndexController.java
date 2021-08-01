@@ -13,10 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-
-    @Value("${sentry.dsn}")
-    private String dsn;
-
     @Value("${app.name}")
     private String appName;
 
@@ -27,7 +23,6 @@ public class IndexController {
     public String getIndexPage() {
         try {
             System.out.println(appName);
-            System.out.println(dsn);
             System.out.println(appEnvironment);
             String a = null;
             System.out.println(a.length());

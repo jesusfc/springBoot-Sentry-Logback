@@ -4,19 +4,15 @@ spring:
       on-profile: development
 app:
   name: Sentry and logback
-  environment: testing
-enable:
-  sentry: true;
+  environment: development
 ---
 spring:
   config:
     activate:
-      on-profile: producction
+      on-profile: production
 app:
   name: Sentry and logback
   environment: production
-enable:
-  sentry: false;
 ---
 sentry:
   dsn: https://89cf8627d7e74e80ad457b2da0459e61@o609567.ingest.sentry.io/5747208
