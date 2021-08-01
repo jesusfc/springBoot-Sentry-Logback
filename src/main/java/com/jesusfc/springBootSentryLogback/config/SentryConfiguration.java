@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Profile;
  * Created By Jesús Fdez. Caraballo on 2021.
  */
 @Profile("development")
-@ConditionalOnProperty(value = "sentry.enable")
-@ConfigurationProperties("sentry")
+@ConditionalOnProperty(value = "enable.sentry")
+//@ConfigurationProperties("sentry")
 @Configuration
 public class SentryConfiguration {
 

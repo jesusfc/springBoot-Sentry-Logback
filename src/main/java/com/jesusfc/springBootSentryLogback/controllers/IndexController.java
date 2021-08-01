@@ -20,11 +20,15 @@ public class IndexController {
     @Value("${app.name}")
     private String appName;
 
+    @Value("${app.environment}")
+    private String appEnvironment;
+
     @RequestMapping({"", "/", "/index"})
     public String getIndexPage() {
         try {
             System.out.println(appName);
             System.out.println(dsn);
+            System.out.println(appEnvironment);
             String a = null;
             System.out.println(a.length());
         } catch (Exception ex) {
