@@ -1,0 +1,24 @@
+spring:
+  config:
+    activate:
+      on-profile: development
+app:
+  name: Sentry and logback
+  environment: development
+---
+spring:
+  config:
+    activate:
+      on-profile: production
+app:
+  name: Sentry and logback
+  environment: production
+---
+sentry:
+  dsn: https://89cf8627d7e74e80ad457b2da0459e61@o609567.ingest.sentry.io/5747208
+  enabled: true
+  environment: production
+  release: sentry_long_0.1
+
+
+

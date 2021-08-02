@@ -13,14 +13,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
+    @Value("${app.name}")
+    private String appName;
 
-    @Value("${sentry.dsn}")
-    private static String dsn;
+    @Value("${app.environment}")
+    private String appEnvironment;
 
     @RequestMapping({"", "/", "/index"})
     public String getIndexPage() {
         try {
-            System.out.println(dsn);
+            System.out.println(appName);
+            System.out.println(appEnvironment);
             String a = null;
             System.out.println(a.length());
         } catch (Exception ex) {
