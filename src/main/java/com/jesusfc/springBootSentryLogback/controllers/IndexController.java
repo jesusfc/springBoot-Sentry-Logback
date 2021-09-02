@@ -4,6 +4,7 @@ import io.sentry.Sentry;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -20,10 +21,12 @@ public class IndexController {
     private String appEnvironment;
 
     @RequestMapping({"", "/", "/index"})
-    public String getIndexPage() {
+    public String getIndexPage(Model model) {
         try {
-            System.out.println(appName);
-            System.out.println(appEnvironment);
+
+            model.addAttribute("appName", appName);
+            model.addAttribute("env", appEnvironment);
+
             String a = null;
             System.out.println(a.length());
         } catch (Exception ex) {
