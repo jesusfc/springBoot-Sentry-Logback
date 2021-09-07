@@ -27,11 +27,18 @@ public class IndexController {
             model.addAttribute("appName", appName);
             model.addAttribute("env", appEnvironment);
 
+            log.debug("debug message");
+            log.info("info message");
+            log.warn("warn message");
+            log.error("error message");
+            log.trace("trace message");
+
             String a = null;
             System.out.println(a.length());
+
         } catch (Exception ex) {
             log.error("Error: " + ex);
-            Sentry.captureException(ex);
+           // Sentry.captureException(ex);
         }
 
         return "index";

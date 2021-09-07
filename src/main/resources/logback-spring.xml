@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+Configuration for having Console error en development profile and
+Sentry logs with "Sentry.xxxxxx" and save log.xxx in a file
+for Production profile.
+-->
+
 <configuration>
 
     <!-- Default config and other properties -->
