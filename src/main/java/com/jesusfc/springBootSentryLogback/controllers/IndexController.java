@@ -38,7 +38,7 @@ public class IndexController {
 
         } catch (Exception ex) {
             log.error("Error: " + ex);
-           // Sentry.captureException(ex);
+            Sentry.captureException(ex);
         }
 
         return "index";

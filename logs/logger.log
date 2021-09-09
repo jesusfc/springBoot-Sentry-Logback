@@ -1,0 +1,2 @@
+2021-09-09 12:49:17,012 ERROR com.jesusfc.springBootSentryLogback.controllers.IndexController [http-nio-8083-exec-1] error message
+2021-09-09 12:49:17,016 ERROR com.jesusfc.springBootSentryLogback.controllers.IndexController [http-nio-8083-exec-1] Error: java.lang.NullPointerException
