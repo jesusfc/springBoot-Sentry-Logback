@@ -7,7 +7,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.2</version>
+        <version>3.3.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -18,7 +18,7 @@
     <description>Sentry for Spring Boot &amp; Logback with different profiles</description>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>21</java.version>
     </properties>
 
     <dependencies>
@@ -54,19 +54,19 @@
         <dependency>
             <groupId>io.sentry</groupId>
             <artifactId>sentry-spring</artifactId>
-            <version>5.1.2</version>
+            <version>7.12.1</version>
         </dependency>
 
-        <!--dependency>
+        <dependency>
             <groupId>io.sentry</groupId>
             <artifactId>sentry-logback</artifactId>
-            <version>1.7.30</version>
-        </dependency-->
+            <version>7.14.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <version>1.18.34</version>
             <scope>provided</scope>
         </dependency>
 
@@ -80,5 +80,12 @@
             </plugin>
         </plugins>
     </build>
+    <repositories>
+        <repository>
+            <id>maven_central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>
+    </repositories>
 
 </project>

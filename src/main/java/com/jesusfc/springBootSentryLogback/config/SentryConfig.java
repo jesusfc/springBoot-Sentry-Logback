@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Profile;
  */
 @Profile("production")
 @Configuration
-public class SentryConfiguration {
+public class SentryConfig {
 
     @Value("${sentry.dsn}")
     private String dsn;
@@ -23,12 +23,12 @@ public class SentryConfiguration {
     private String release;
 
     @Bean
-    public void sentryInit() {
+    public String sentryInit() {
         Sentry.init(options -> {
             options.setDsn(dsn);
             options.setEnvironment(environment);
             options.setRelease(release);
         });
+        return null;
     }
-
 }
