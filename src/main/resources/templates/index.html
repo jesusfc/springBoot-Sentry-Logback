@@ -2,14 +2,16 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Sentry for Spring Boot &amp; Logback with differents profiles</title>
+    <title>Sentry for Spring Boot &amp; Logback with different profiles</title>
 </head>
 <body>
-<h1>Sentry for Spring Boot &amp; Logback with differents profiles</h1>
+<h1>Sentry for Spring Boot &amp; Logback with different profiles</h1>
 
 <table>
+    <tr><th colspan="2" th:text="${time}"/></tr>
     <tr><th colspan="2" th:text="${appName}"/></tr>
-    <tr><th>Entorno: </th><th th:text="${env}"/></tr>
+    <tr><th colspan="2">Entorno: </th><th th:text="${env}"/></tr>
+    <tr><th colspan="2">Error: </th><th th:text="${error}"/></tr>
 </table>
 </body>
 </html>
