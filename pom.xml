@@ -15,7 +15,7 @@
     <artifactId>springBoot-Sentry-Logback</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springBoot-Sentry-Logback</name>
-    <description>Sentry for Spring Boot &amp; Logback with different profiles</description>
+    <description>Sentry for Spring Boot. For the development environment we show the logs in the console and for production we save the errors in Sentry.</description>
 
     <properties>
         <java.version>21</java.version>
@@ -53,15 +53,9 @@
 
         <dependency>
             <groupId>io.sentry</groupId>
-            <artifactId>sentry-spring</artifactId>
-            <version>7.12.1</version>
-        </dependency>
-
-        <!--dependency>
-            <groupId>io.sentry</groupId>
             <artifactId>sentry-logback</artifactId>
             <version>7.14.0</version>
-        </dependency-->
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>

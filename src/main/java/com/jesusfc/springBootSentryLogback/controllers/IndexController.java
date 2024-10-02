@@ -33,19 +33,10 @@ public class IndexController {
             model.addAttribute("appName", appName);
             model.addAttribute("env", appEnvironment);
 
-
-            /*
-            log.debug("debug message");
-            log.info("info message");
-            log.warn("warn message");
-            log.error("error message");
-            log.trace("trace message");
-*/
             String a = null;
             System.out.println(a.length());
 
         } catch (Exception ex) {
-            log.error("Error appEnvironment: " + appEnvironment + ", LocalDateTime.now: " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")) + " - log:" + ex);
             Sentry.captureException(ex);
             model.addAttribute("error", ex);
         }
